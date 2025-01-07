@@ -55,7 +55,7 @@ def change_samplerate(file, new_samplerate):
 def main():
     if len(sys.argv) != 3:
         print("Usage: ./sample-right.py correct_samplerate file_pattern")
-        print("Example: ./sample-right.py 44100 *.wav")
+        print('Example: ./sample-right.py 44100 "*.wav"')
         sys.exit(1)
 
     try:
