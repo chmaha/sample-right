@@ -1,6 +1,6 @@
 ### Sample-Right - Batch fix incorrect samplerate header information
 ---
-Occasionally some audio recording devices stamp files with the wrong samplerate despite the underlying audio being recorded as intended (an example being Grace Design m108 on MacOS with firmwire prior to 1.12). As a result, DAWs and audio players play back the files at the wrong speed. This python script is designed to quickly fix these issues for one or more audio files by only changing the samplerate information in the wave header.
+Occasionally some audio recording devices stamp files with the wrong samplerate despite the underlying audio being recorded as intended (an example being Grace Design m108 on MacOS with firmware prior to 1.12). As a result, DAWs and audio players play back the files at the wrong speed. This python script is designed to quickly fix these issues for one or more audio files by only changing the samplerate information in the wave header.
 
 **Supported file type**: wav
 
