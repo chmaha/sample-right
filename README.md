@@ -8,7 +8,7 @@ Occasionally some audio recording devices stamp files with the wrong samplerate 
 sample-right.py <correct_samplerate> <file_pattern>
 #### Example (correcting the samplerate header information for all wav files in the folder to 88.2k):
 ```sh
-sample-right.py 88200 *.wav
+sample-right.py 88200 "*.wav"
 ```
 
 #### Test File
