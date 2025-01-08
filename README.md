@@ -8,9 +8,8 @@ Occasionally some audio recording devices stamp files with the wrong samplerate 
 sample-right.py <correct_samplerate> <file_pattern>
 #### Example (correcting the samplerate header information for all wav files in the folder to 88.2k):
 ```sh
-sample-right.py 88200 "*.wav"
+sample-right.py 88200 *.wav
 ```
-(note the quotes around `*.wav`)
 
 #### Test File
 Included in the repository is a wave file (from _The Open Goldberg Variations_ performed by Kimiko Ishizaka) with audio samples recorded at 44.1k but incorrectly stamped 48k. To fix:
