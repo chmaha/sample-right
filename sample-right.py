@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 #
 # Sample-Right - Batch fix incorrect samplerate stamps
 # Copyright (C) 2025 chmaha
