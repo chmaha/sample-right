@@ -66,13 +66,18 @@ def main():
 
     file_pattern = sys.argv[2]
 
-    # Find matching files
-    files = glob.glob(file_pattern)
-    if not files:
-        print(f"No files matched the pattern: {file_pattern}")
+    # Handle wildcard expansion using glob
+    files_to_process = []
+    expanded_files = glob.glob(file_pattern)  # Expand wildcard patterns
+    if not expanded_files:
+        print(f"Warning: No files matched for pattern '{file_pattern}'")
+    files_to_process.extend(expanded_files)  # Add expanded files to the list
+
+    if not files_to_process:
+        print("No files to process. Exiting.")
         sys.exit(1)
 
-    for file in files:
+    for file in files_to_process:
         if is_supported_file(file):
             change_samplerate(file, samplerate)
         else:
